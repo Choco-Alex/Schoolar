@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <a class="haut" href="#haut"><i class="fa fa-caret-up"></i></a>
+    <div id="haut"></div>
+
+    <div
+      class="custom-bg-ligh"
+      style="background: linear-gradient(#08066a, #3583b1, #08066a)"
+    >
+      <!-- style="background: linear-gradient(#08066a, #3583b1, #08066a)" -->
+      <main>
+        <div class="container">
+          <section
+            class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4"
+          >
+            <div class="container">
+              <div class="row justify-content-center">
+                <div
+                  class="col-lg-9 d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div class="d-flex justify-content-center py-2">
+                    <a
+                      href="#"
+                      class="logo d-flex align-items-center w-auto text-decoration-none"
+                    >
+                      <img src="assets/img/logo.png" alt="" />
+                    </a>
+                  </div>
+                  <!-- End Logo -->
+
+                  <div class="card mb-3 col-md-12 flex-md-row border-0 shadow">
+                    <div class="col-md-6 custom-bg-primary rounded text-center">
+                      <!-- logo -->
+                      <div class="mt-4">
+                        <img
+                          src="../assets/images/logo.png"
+                          width="120"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+
+                      <!-- welcome back -->
+                      <div class="mt-5 mb-5">
+                        <h4 class="text-light">Welcome back</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="pt-4 pb-2 car bg-light text-dark shadow">
+                        <h5 class="card-title text-center pb-0 fs-4">
+                          Connexion à votre compte
+                        </h5>
+                        <p class="text-center">
+                          Entrer votre login &amp; mot de passe
+                        </p>
+                      </div>
+                      <div class="card-body">
+                        <form
+                          class="row g-3 needs-validation fs-6 mt-3 mb-3"
+                          novalidate=""
+                          action="#"
+                          method="post"
+                        >
+                          <div class="col-12">
+                            <label for="yourUsername" class="form-label"
+                              >Login</label
+                            >
+                            <div class="input-group has-validation">
+                              <span
+                                class="input-group-text"
+                                id="inputGroupPrepend"
+                                ><i class="bi bi-person-fill fs-6 text-gray"></i
+                              ></span>
+                              <input
+                                type="text"
+                                name="login"
+                                class="form-control"
+                                id="yourUsername"
+                                required
+                                value=""
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez renseigner votre login
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="yourUsername" class="form-label"
+                              >Mot de passe</label
+                            >
+                            <div class="input-group has-validation">
+                              <span
+                                class="input-group-text"
+                                id="inputGroupPrepend"
+                                ><i class="bi bi-lock-fill fs-6 text-gray"></i
+                              ></span>
+                              <input
+                                type="password"
+                                name="password"
+                                class="form-control"
+                                id="yourUsername"
+                                required
+                                value=""
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez renseigner votre mot de passe
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                name="remember"
+                                value="true"
+                                id="rememberMe"
+                              />
+                              <label class="form-check-label" for="rememberMe"
+                                >Se souvenir de moi</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button
+                              class="btn btn-primary custom-bg-primary rounded-pill w-50"
+                              type="submit"
+                            >
+                              Se connecter
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- End #main -->
+    </div>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ asset('js/b5/bootstrap.min.js') }}"></script>
+  </body>
+</html>
